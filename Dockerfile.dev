@@ -1,0 +1,16 @@
+FROM node:alpine
+
+WORKDIR '/home/node/app'
+
+RUN mkdir node_modules
+RUN chown -R node:node ./node_modules
+
+COPY package.json .
+
+RUN npm install
+COPY . .
+USER node
+
+EXPOSE 3000
+# 어떤 포트로 내보낼 것인가에 대한 일종의 약속에 불과함. 실제 포트 연결이 필요하다면 run -p 외부:내부 를 이용.
+CMD ["npm", "run", "start"]
