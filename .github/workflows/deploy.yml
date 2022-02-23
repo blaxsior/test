@@ -34,8 +34,6 @@ jobs:
           environment_name: Dockertest-env
           existing_bucket_name: elasticbeanstalk-ap-northeast-2-608734287208
           region: ap-northeast-2
+          use_existing_version_if_available: true
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
-
-# application_name, environment_name, existing_bucket_name, environment_name 변경
-# AWS의 EBS에 맞게
