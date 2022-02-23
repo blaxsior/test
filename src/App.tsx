@@ -19,9 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <p>
-        잘가! 빠잉! 22
-      </p>
+      <p>Hello, WORLD!</p>
     </div>
   );
 }
