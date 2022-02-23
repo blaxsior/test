@@ -2,8 +2,8 @@ name: Deploy Frontend
 on:
   push:
     branches:
-      - main
-# main 에 푸시할 때 마다
+      - master
+# master 에 푸시할 때 마다
 
 # build 잡을 수행.
 # ubuntu-latest를 기반으로
